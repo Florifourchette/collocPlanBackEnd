@@ -3,7 +3,7 @@ import pool from '../DB/client.js';
 const createUser = async (req, res) => {
     try {
         console.log(req.body);
-        const { username, email, birthday, password } = req.body;
+      const { username, email, birthday, password } = req.body;
         const today = new Date();
         const dateString = today
           .toISOString()
